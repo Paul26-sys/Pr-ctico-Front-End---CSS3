@@ -1,19 +1,73 @@
-/* Estilos para el párrafo */
-header p {
-    font-size: 18px;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: underline;
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #3a3a3a;
 }
 
-/* Estilos para el blockquote */
-header blockquote {
-    font-size: 22px;
+/* Estilos para el encabezado */
+header {
+    background-color: #4f4f4f;
+    padding: 20px 0;
     text-align: center;
-    text-transform: italic;
-    text-decoration: none;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+/* Estilos para la sección */
+section {
+    background-color: #f3f3f3;
+    margin: 30px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    font-size: 1.5em;
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+}
+
+section p {
+    text-align: justify;
+    text-transform: capitalize;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+blockquote {
+    background-color: #e0e0e0;
+    padding: 15px;
     margin: 20px 0;
-    padding: 10px;
+    font-style: italic;
     border-left: 5px solid #ccc;
-    background-color: #f9f9f9;
+    color: #555;
+}
+
+/* Media Query para pantallas con ancho máximo de 768px */
+@media (max-width: 768px) {
+    body {
+        background-color: #2a2a2a;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    section {
+        width: 90%;
+        padding: 15px;
+    }
+
+    blockquote {
+        padding: 10px;
+        margin: 15px 0;
+    }
 }
