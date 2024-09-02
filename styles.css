@@ -1,8 +1,96 @@
+/* Estilos para el párrafo */
+header p {
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+/* Estilos para el blockquote */
+header blockquote {
+    font-size: 22px;
+    text-align: center;
+    text-transform: italic;
+    text-decoration: none;
+    margin: 20px 0;
+    padding: 10px;
+    border-left: 5px solid #ccc;
+    background-color: #f9f9f9;
+}
+
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #3a3a3a;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #4f4f4f;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+/* Estilos para la sección */
+section {
+    background-color: #f3f3f3;
+    margin: 30px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px; /* Espacio entre ejercicios */
+}
+
+section h2 {
+    font-size: 1.5em;
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+}
+
+section p {
+    text-align: justify;
+    text-transform: capitalize;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+blockquote {
+    background-color: #e0e0e0;
+    padding: 15px;
+    margin: 20px 0;
+    font-style: italic;
+    border-left: 5px solid #ccc;
+    color: #555;
+}
+
+/* Media Query para pantallas con ancho máximo de 768px */
+@media (max-width: 768px) {
+    body {
+        background-color: #2a2a2a;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    section {
+        width: 90%;
+        padding: 15px;
+    }
+
+    blockquote {
+        padding: 10px;
+        margin: 15px 0;
+    }
 }
 
 /* Estilos para la caja relativa */
@@ -26,3 +114,115 @@ body {
     color: white;
     border-radius: 5px;
 }
+
+/* Sección que contiene las animaciones */
+.animaciones {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+/* Estilos para el div con clase animacion */
+.animacion {
+    width: 150px;
+    height: 150px;
+    background-color: #4f8a8b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 10px;
+    transition: background-color 0.5s ease;
+}
+
+.animacion:hover {
+    background-color: #ff6347;
+}
+
+/* Estilos para el div con clase mover */
+.mover {
+    width: 100px;
+    height: 100px;
+    background-color: #285b5c;
+    border-radius: 10px;
+    animation: movimiento 3s linear infinite;
+}
+
+/* Definición de la animación @keyframes */
+@keyframes movimiento {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(200px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Estilos para el contenedor de la cuadrícula */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 1000px;
+}
+
+/* Estilos para los elementos de la cuadrícula */
+.grid-item {
+    background-color: #4f8a8b;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.grid-item:hover {
+    background-color: #285b5c;
+}
+
+/* Estilos generales para las cajas */
+.box {
+    padding: 20px;
+    margin: 20px;
+    border: 2px solid #000;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+/* Estilos para la caja destacada */
+.highlighted {
+    border: 5px solid #ff0000;
+    background-color: #ffe6e6;
+}
+
+/* Estilos para el párrafo */
+section p {
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+/* Estilos para el blockquote */
+section blockquote {
+    font-size: 22px;
+    text-align: center;
+    text-transform: italic;
+    text-decoration: none;
+    margin: 20px 0;
+    padding: 10px;
+    border-left: 5px solid #ccc;
+    background-color: #f9f9f9;
+}
+
