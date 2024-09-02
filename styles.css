@@ -1,0 +1,19 @@
+/* Estilos para el párrafo */
+header p {
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+/* Estilos para el blockquote */
+header blockquote {
+    font-size: 22px;
+    text-align: center;
+    text-transform: italic;
+    text-decoration: none;
+    margin: 20px 0;
+    padding: 10px;
+    border-left: 5px solid #ccc;
+    background-color: #f9f9f9;
+}
